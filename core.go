@@ -75,7 +75,9 @@ func main() {
 	listenAddress := config.Host + ":" + config.Port
 
 	// app.Get("/clean/image", cleanHandlerFunc)
-	app.Get("/*", handlerFunc)
+	app.Get("/hd1", handlerFunc)
+	app.Get("/hd2", handlerFunc2)
+	app.Get("/*", handlerFunc2)
 
 	banner := fmt.Sprintf(`
 	==============================
