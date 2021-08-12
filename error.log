@@ -1,0 +1,8 @@
+time="2021-08-12 11:43:18" level="info" msg="200" func="[main.fetchRemoteImage()]"
+time="2021-08-12 11:43:18" level="info" msg="webpEncode start:2021-08-12 11:43:18.649113 +0800 CST m=+10.494800494" func="[main.webpEncoder()]"
+time="2021-08-12 11:43:21" level="info" msg="Save to ./exhaust/\x03 ok!\n" func="[main.webpEncoder()]"
+time="2021-08-12 11:43:21" level="info" msg="webpEncode span:2.375749512s" func="[main.webpEncoder()]"
+time="2021-08-12 11:48:30" level="info" msg="200" func="[main.fetchRemoteImage()]"
+time="2021-08-12 11:48:31" level="info" msg="webpEncode start:2021-08-12 11:48:31.268765 +0800 CST m=+29.171161320" func="[main.webpEncoder()]"
+time="2021-08-12 11:48:33" level="info" msg="Save to ./exhaust/62 ok!\n" func="[main.webpEncoder()]"
+time="2021-08-12 11:48:33" level="info" msg="webpEncode span:2.414015412s" func="[main.webpEncoder()]"
