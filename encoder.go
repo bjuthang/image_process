@@ -103,10 +103,7 @@ func imageFetchAndWebpEncoder(url string, quality float32) (err error, imagePath
 
 // 请求，及响应压缩图片。拉取url成文件，然后转换成本地文件，然后发送文件.
 func handlerFunc(c *fiber.Ctx) error { /// 127.0.0.1:3333/abc/big.jpg
-	// var reqURI, _ = url.QueryUnescape(c.Path()) // /abc/big.jpg
-	// var url = "host" + reqURI
 	var url = c.Get("url")
-
 	var ua = c.Get("User-Agent")
 	var debug = c.Get("debug")
 
@@ -129,6 +126,13 @@ func handlerFunc(c *fiber.Ctx) error { /// 127.0.0.1:3333/abc/big.jpg
 // 请求，及响应压缩图片。 内存中操作转换.
 func handlerFunc2(c *fiber.Ctx) error { /// 127.0.0.1:3333/abc/big.jpg
 	var url = c.Get("url")
+	var ua = c.Get("User-Agent")
+	var debug = c.Get("debug")
+
+	if debug != "" {
+		log.SetLevel(log.DebugLevel)
+	}
+	log.Debugf("Incoming connection from %s@%s", ua, c.IP())
 
 	client := &http.Client{}
 	request, err := http.NewRequest("GET", url, nil)

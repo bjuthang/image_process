@@ -1,0 +1,5 @@
+  curl -svo 1.tmp  '127.1:3333/hd1' -H 'url:http://192.168.2.127:3330/1.jpg'
+  curl -svo 1.tmp  '127.1:3333/hd1' -H 'url:http://192.168.2.127:3330/1.jpg'  -H 'debug:t'
+
+  curl -svo 1.tmp  '127.1:3333/hd1' -H 'url:http://192.168.2.127:3330/1.jpg'
+  curl -svo 1.tmp  '127.1:3333/hd2' -H 'url:http://192.168.2.127:3330/1.jpg'  -H 'debug:t'
